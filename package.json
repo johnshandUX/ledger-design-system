@@ -1,11 +1,15 @@
 {
   "name": "@johnshandux/ledger-design-system",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "files": [
+    "dist"
+  ],
   "description": "A production-focused design system and prototype for a modern business banking platform",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -24,21 +28,29 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
-    "@vitejs/plugin-react": "^6.1.1",
-    "typescript": "^7.0.2",
-    "vite": "^8.2.2",
-    "storybook": "^10.6.0",
-    "@storybook/react-vite": "^10.6.0",
     "@chromatic-com/storybook": "latest",
-    "@storybook/addon-vitest": "^10.6.0",
     "@storybook/addon-a11y": "^10.6.0",
     "@storybook/addon-docs": "^10.6.0",
     "@storybook/addon-mcp": "^10.6.0",
-    "vitest": "latest",
-    "playwright": "latest",
+    "@storybook/addon-vitest": "^10.6.0",
+    "@storybook/react-vite": "^10.6.0",
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
     "@vitest/browser-playwright": "latest",
-    "@vitest/coverage-v8": "latest"
-  }
+    "@vitest/coverage-v8": "latest",
+    "playwright": "latest",
+    "storybook": "^10.6.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "latest"
+  },
+  "main": "./dist/ledger-design-system.js",
+  "module": "./dist/ledger-design-system.js",
+  "exports": {
+    ".": "./dist/ledger-design-system.js",
+    "./styles.css": "./dist/ledger-design-system.css"
+  },
+  "style": "./dist/ledger-design-system.css"
 }
