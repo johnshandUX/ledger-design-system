@@ -1,3 +1,4 @@
+import "../src/tokens/colors.css";
 import type { Preview } from '@storybook/react-vite'
 
 const preview: Preview = {

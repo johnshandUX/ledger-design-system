@@ -1,0 +1,28 @@
+.ledger-button {
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ledger-button--primary {
+  background: var(--ledger-color-primary-700);
+  color: var(--ledger-color-white);
+}
+
+.ledger-button--primary:hover {
+  background: var(--ledger-color-primary-600);
+}
+
+.ledger-button--secondary {
+  background: var(--ledger-color-white);
+  color: var(--ledger-color-primary-700);
+  border: 1px solid var(--ledger-color-neutral-300);
+}
+
+.ledger-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
