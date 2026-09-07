@@ -1,0 +1,44 @@
+{
+  "name": "@johnshandux/ledger-design-system",
+  "version": "1.0.0",
+  "description": "A production-focused design system and prototype for a modern business banking platform",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnshandUX/ledger-design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/johnshandUX/ledger-design-system/issues"
+  },
+  "homepage": "https://github.com/johnshandUX/ledger-design-system#readme",
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "storybook": "^10.6.0",
+    "@storybook/react-vite": "^10.6.0",
+    "@chromatic-com/storybook": "latest",
+    "@storybook/addon-vitest": "^10.6.0",
+    "@storybook/addon-a11y": "^10.6.0",
+    "@storybook/addon-docs": "^10.6.0",
+    "@storybook/addon-mcp": "^10.6.0",
+    "vitest": "latest",
+    "playwright": "latest",
+    "@vitest/browser-playwright": "latest",
+    "@vitest/coverage-v8": "latest"
+  }
+}
