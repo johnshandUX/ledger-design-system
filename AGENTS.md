@@ -4,6 +4,10 @@ This repository contains Ledger Design System.
 
 Before making changes, read `DESIGN_SYSTEM.md`.
 
+When working on form controls, also read `FORM_CONTROLS.md` and treat it as the component-family specification for Input, Textarea, Select, Checkbox and Radio.
+
+If `FORM_CONTROLS.md` conflicts with a component's existing implementation, follow the specification and report the implementation change. If it conflicts with `DESIGN_SYSTEM.md`, stop and report the conflict rather than choosing one silently.
+
 The goal is to maintain a coherent, accessible design system with parity across code, Storybook and Figma.
 
 ## Working principles

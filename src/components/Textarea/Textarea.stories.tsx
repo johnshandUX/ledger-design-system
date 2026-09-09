@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Input } from "./Input";
+import { Textarea } from "./Textarea";
 
 const meta = {
-  title: "Components/Input",
-  component: Input,
+  title: "Components/Textarea",
+  component: Textarea,
   parameters: {
     layout: "padded",
   },
   tags: ["autodocs"],
   args: {
-    label: "Account name",
+    label: "Notes",
   },
   decorators: [
     (Story) => (
@@ -18,7 +18,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof Input>;
+} satisfies Meta<typeof Textarea>;
 
 export default meta;
 
@@ -26,20 +26,20 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    placeholder: "Enter account name",
+    placeholder: "Add context for the account",
   },
 };
 
 export const WithHint: Story = {
   args: {
-    hint: "Use the name shown on the account.",
-    placeholder: "Enter account name",
+    hint: "This will be shown to internal account teams.",
+    placeholder: "Add context for the account",
   },
 };
 
 export const Error: Story = {
   args: {
-    error: "Enter an account name.",
-    placeholder: "Enter account name",
+    error: "A note is required for this workflow.",
+    placeholder: "Add context for the account",
   },
 };
