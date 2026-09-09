@@ -198,7 +198,43 @@ If a required design decision is missing from the token system, it should be ide
 
 ---
 
-## 7. Accessibility
+## 7. Icons
+
+Ledger uses an established open-source icon library as the foundation for interface icons.
+
+The initial icon source is Lucide.
+
+Icons used by Ledger products should be exposed through the Ledger Design System rather than imported directly from the underlying icon library by product applications.
+
+This allows Ledger to maintain consistent icon selection, sizing, accessibility and visual treatment while keeping the underlying icon source replaceable.
+
+### Principles
+
+- Use icons to support meaning, navigation or interaction rather than decoration.
+- Prefer a consistent outline icon style.
+- Use Ledger design tokens for icon colour where appropriate.
+- Do not use icons as the only method of communicating important information.
+- Decorative icons should be hidden from assistive technology.
+- Meaningful standalone icons require an accessible name.
+- Do not introduce arbitrary icon sizes when an established Ledger icon size is available.
+- Do not modify or create custom SVG icons when an appropriate approved icon already exists.
+
+### Initial status icons
+
+The first approved Ledger icons will support:
+
+- information
+- success
+- warning
+- error
+
+These will initially be used by feedback components such as Alert.
+
+The icon foundation should remain small and expand only when product requirements identify additional icon needs.
+
+---
+
+## 8. Accessibility
 
 Accessibility is a core requirement of Ledger Design System.
 
@@ -216,7 +252,7 @@ Accessibility should be considered during component creation rather than added a
 
 ---
 
-## 8. Component states
+## 9. Component states
 
 Components should only expose states that are deliberately supported by the design system.
 
@@ -233,7 +269,7 @@ New states and variants should be added because of demonstrated product requirem
 
 ---
 
-## 9. Storybook
+## 10. Storybook
 
 Storybook is the implementation reference for Ledger components.
 
@@ -251,7 +287,7 @@ Storybook is not a separate design system. It displays the implementation of Led
 
 ---
 
-## 10. Figma parity
+## 11. Figma parity
 
 Ledger components and tokens should have equivalent concepts in Figma.
 

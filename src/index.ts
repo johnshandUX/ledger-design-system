@@ -11,3 +11,10 @@ export { Textarea } from "./components/Textarea/Textarea";
 export { Select } from "./components/Select/Select";
 export { Checkbox } from "./components/Checkbox/Checkbox";
 export { Radio } from "./components/Radio/Radio";
+export {
+  InformationIcon,
+  SuccessIcon,
+  WarningIcon,
+  ErrorIcon,
+} from "./components/Icon/Icon";
+export type { LedgerIconProps } from "./components/Icon/Icon";

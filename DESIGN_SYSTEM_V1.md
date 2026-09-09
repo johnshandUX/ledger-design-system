@@ -17,19 +17,29 @@ Already established:
 - borders
 - elevation
 
+To add:
+
+- minimal icon foundation using Lucide
+  - information
+  - success
+  - warning
+  - error
+
+Additional icons should be introduced only when required by a component or demonstrated product need.
+
 ## Core components
 
 Existing:
 
 - Button
 - Input
-
-To add:
-
 - Textarea
 - Select
 - Checkbox
 - Radio
+
+To add:
+
 - Link
 - Badge
 - Alert

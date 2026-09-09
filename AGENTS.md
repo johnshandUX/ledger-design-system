@@ -8,6 +8,12 @@ When working on form controls, also read `FORM_CONTROLS.md` and treat it as the 
 
 If `FORM_CONTROLS.md` conflicts with a component's existing implementation, follow the specification and report the implementation change. If it conflicts with `DESIGN_SYSTEM.md`, stop and report the conflict rather than choosing one silently.
 
+When working on Badge, Alert, Card or Link, also read `FEEDBACK_AND_SURFACES.md` and treat it as the component-family specification.
+
+If `FEEDBACK_AND_SURFACES.md` conflicts with a component's existing implementation, follow the specification and report the implementation change. If it conflicts with `DESIGN_SYSTEM.md`, stop and report the conflict rather than choosing one silently.
+
+Do not invent semantic status colours that are not defined by the Ledger token system. Report the token gap instead.
+
 The goal is to maintain a coherent, accessible design system with parity across code, Storybook and Figma.
 
 ## Working principles
