@@ -9,7 +9,7 @@ const meta = {
   },
   tags: ["autodocs"],
   args: {
-    children: "Button",
+    children: "Continue",
   },
 } satisfies Meta<typeof Button>;
 

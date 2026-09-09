@@ -1,39 +1,43 @@
 .ledger-input-field {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: var(--ledger-space-2);
 }
 
 .ledger-input-label {
-  color: var(--ledger-color-neutral-900);
-  font-weight: 600;
+  color: var(--ledger-color-text);
+  font-weight: var(--ledger-font-weight-semibold);
 }
 
 .ledger-input-hint {
-  color: var(--ledger-color-neutral-700);
-  font-size: 0.875rem;
+  color: var(--ledger-color-text-secondary);
+  font-size: var(--ledger-font-size-body-small);
 }
 
 .ledger-input {
+  box-sizing: border-box;
   min-height: 44px;
-  padding: 10px 12px;
-  border: 1px solid var(--ledger-color-neutral-300);
-  border-radius: 8px;
-  background: var(--ledger-color-white);
-  color: var(--ledger-color-neutral-900);
-  font: inherit;
+  padding: var(--ledger-space-2) var(--ledger-space-3);
+  border: var(--ledger-border-width-thin) solid var(--ledger-color-border);
+  border-radius: var(--ledger-radius-medium);
+  background: var(--ledger-color-surface);
+  color: var(--ledger-color-text);
+  font-family: var(--ledger-font-family-sans);
+  font-size: var(--ledger-font-size-body);
+  font-weight: var(--ledger-font-weight-regular);
+  line-height: var(--ledger-line-height-body);
 }
 
 .ledger-input:focus {
-  outline: 2px solid var(--ledger-color-primary-700);
+  outline: var(--ledger-border-width-thick) solid var(--ledger-color-text);
   outline-offset: 2px;
 }
 
 .ledger-input--error {
-  border-color: #b42318;
+  border-color: var(--ledger-color-error);
 }
 
 .ledger-input-error {
-  color: #b42318;
-  font-size: 0.875rem;
+  color: var(--ledger-color-error);
+  font-size: var(--ledger-font-size-body-small);
 }

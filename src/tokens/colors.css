@@ -1,11 +1,29 @@
 :root {
-  --ledger-color-primary-700: #2f3a8f;
-  --ledger-color-primary-600: #3f4db3;
-  --ledger-color-primary-100: #eef0ff;
+  /* Neutral */
+  --ledger-color-neutral-0: #ffffff;
+  --ledger-color-neutral-50: #fafafa;
+  --ledger-color-neutral-100: #f5f5f5;
+  --ledger-color-neutral-200: #e5e5e5;
+  --ledger-color-neutral-300: #d4d4d4;
+  --ledger-color-neutral-400: #a3a3a3;
+  --ledger-color-neutral-500: #737373;
+  --ledger-color-neutral-600: #525252;
+  --ledger-color-neutral-700: #404040;
+  --ledger-color-neutral-800: #262626;
+  --ledger-color-neutral-900: #171717;
+  --ledger-color-neutral-950: #0a0a0a;
 
-  --ledger-color-neutral-900: #1f2937;
-  --ledger-color-neutral-700: #4b5563;
-  --ledger-color-neutral-300: #d1d5db;
-  --ledger-color-neutral-100: #f3f4f6;
-  --ledger-color-white: #ffffff;
+  /* Semantic */
+  --ledger-color-background: var(--ledger-color-neutral-0);
+  --ledger-color-surface: var(--ledger-color-neutral-0);
+
+  --ledger-color-text: var(--ledger-color-neutral-900);
+  --ledger-color-text-secondary: var(--ledger-color-neutral-600);
+
+  --ledger-color-border: var(--ledger-color-neutral-300);
+  --ledger-color-border-strong: var(--ledger-color-neutral-700);
+
+  --ledger-color-action: var(--ledger-color-neutral-900);
+  --ledger-color-action-hover: var(--ledger-color-neutral-700);
+  --ledger-color-action-text: var(--ledger-color-neutral-0);
 }

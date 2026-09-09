@@ -1,5 +1,8 @@
-import "../src/tokens/colors.css";
-import type { Preview } from '@storybook/react-vite'
+/// <reference types="vite/client" />
+
+import "../src/styles/index.css";
+
+import type { Preview } from "@storybook/react-vite";
 
 const preview: Preview = {
   parameters: {
