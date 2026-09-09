@@ -23,6 +23,8 @@ export function Select({
   placeholder,
   id,
   className = "",
+  "aria-describedby": ariaDescribedBy,
+  "aria-invalid": ariaInvalid,
   ...props
 }: SelectProps) {
   const selectId = id ?? label.toLowerCase().replace(/\s+/g, "-");
@@ -31,7 +33,9 @@ export function Select({
   const errorId = error ? `${selectId}-error` : undefined;
 
   const describedBy =
-    [hintId, errorId].filter(Boolean).join(" ") || undefined;
+    [hintId, errorId, ariaDescribedBy].filter(Boolean).join(" ") || undefined;
+
+  const invalid = error ? true : ariaInvalid;
 
   return (
     <div className="ledger-select-field">
@@ -48,7 +52,7 @@ export function Select({
       <select
         id={selectId}
         className={`ledger-select ${error ? "ledger-select--error" : ""} ${className}`.trim()}
-        aria-invalid={error ? true : undefined}
+        aria-invalid={invalid}
         aria-describedby={describedBy}
         {...props}
       >

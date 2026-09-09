@@ -6,6 +6,7 @@ import "./tokens/borders.css";
 import "./tokens/elevation.css";
 
 export { Button } from "./components/Button/Button";
+export { FormField } from "./components/FormField/FormField";
 export { Input } from "./components/Input/Input";
 export { Textarea } from "./components/Textarea/Textarea";
 export { Select } from "./components/Select/Select";

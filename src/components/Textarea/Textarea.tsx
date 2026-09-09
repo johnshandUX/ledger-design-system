@@ -13,6 +13,8 @@ export function Textarea({
   error,
   id,
   className = "",
+  "aria-describedby": ariaDescribedBy,
+  "aria-invalid": ariaInvalid,
   ...props
 }: TextareaProps) {
   const textareaId = id ?? label.toLowerCase().replace(/\s+/g, "-");
@@ -21,7 +23,9 @@ export function Textarea({
   const errorId = error ? `${textareaId}-error` : undefined;
 
   const describedBy =
-    [hintId, errorId].filter(Boolean).join(" ") || undefined;
+    [hintId, errorId, ariaDescribedBy].filter(Boolean).join(" ") || undefined;
+
+  const invalid = error ? true : ariaInvalid;
 
   return (
     <div className="ledger-textarea-field">
@@ -38,7 +42,7 @@ export function Textarea({
       <textarea
         id={textareaId}
         className={`ledger-textarea ${error ? "ledger-textarea--error" : ""} ${className}`.trim()}
-        aria-invalid={error ? true : undefined}
+        aria-invalid={invalid}
         aria-describedby={describedBy}
         {...props}
       />

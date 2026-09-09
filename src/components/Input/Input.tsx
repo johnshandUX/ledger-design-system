@@ -13,6 +13,8 @@ export function Input({
   error,
   id,
   className = "",
+  "aria-describedby": ariaDescribedBy,
+  "aria-invalid": ariaInvalid,
   ...props
 }: InputProps) {
   const inputId = id ?? label.toLowerCase().replace(/\s+/g, "-");
@@ -21,7 +23,9 @@ export function Input({
   const errorId = error ? `${inputId}-error` : undefined;
 
   const describedBy =
-    [hintId, errorId].filter(Boolean).join(" ") || undefined;
+    [hintId, errorId, ariaDescribedBy].filter(Boolean).join(" ") || undefined;
+
+  const invalid = error ? true : ariaInvalid;
 
   return (
     <div className="ledger-input-field">
@@ -38,7 +42,7 @@ export function Input({
       <input
         id={inputId}
         className={`ledger-input ${error ? "ledger-input--error" : ""} ${className}`.trim()}
-        aria-invalid={error ? true : undefined}
+        aria-invalid={invalid}
         aria-describedby={describedBy}
         {...props}
       />
